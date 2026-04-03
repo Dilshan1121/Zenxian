@@ -232,6 +232,8 @@ img { display: block; max-width: 100%; }
   background: var(--color-cyan);
   flex-shrink: 0;
 }
+.hero .section-label::before { display: none; }
+.hero .section-label { line-height: 1.4; flex-direction: column; gap: 2px; text-align: center; }
 
 /* ---- 5. SCROLL ANIMATIONS --------------------------------- */
 .anim-ready {
@@ -985,12 +987,12 @@ a.breadcrumb__item:hover { color: var(--color-cyan); }
   z-index: 4;
 }
 
-.hero__text { display: flex; flex-direction: column; gap: 32px; max-width: 920px; margin: 0 auto; text-align: center; align-items: center; }
+.hero__text { display: flex; flex-direction: column; gap: 32px; max-width: 1100px; margin: 0 auto; text-align: center; align-items: center; }
 
 .hero__h1 {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2rem, 3.8vw, 3.5rem);
   letter-spacing: 0.02em;
   line-height: 1;
   text-transform: uppercase;
