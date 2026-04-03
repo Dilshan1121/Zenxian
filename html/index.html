@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenxian — Architecting the Future of Intelligence</title>
+  <meta name="description" content="High-performance AI and enterprise software systems built with precision and clarity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- SPLASH SCREEN -->
+  <div id="splash" aria-hidden="true">
+    <img src="images/logo.png" alt="" class="splash__logo">
+    <span class="splash__wordmark">ZENXIAN</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="images/logo.png" alt="" class="navbar__logo-img" aria-hidden="true">
+          Zenxian
+        </a>
+        <nav class="navbar__links">
+          <div class="mega-menu-trigger" id="mega-menu-trigger">
+            <span class="navbar__link">Solutions <span class="mega-menu-trigger__caret">▾</span></span>
+          </div>
+          <a href="platform.html" class="navbar__link">Platform</a>
+          <a href="case-studies.html" class="navbar__link">Case Studies</a>
+          <a href="about.html" class="navbar__link">About</a>
+          <a href="contact.html" class="navbar__link">Contact</a>
+        </nav>
+        <div class="navbar__cta">
+          <a href="contact.html" class="btn btn--ghost" style="font-size:0.75rem;">Book a Consultation</a>
+        </div>
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+          <svg viewBox="0 0 32 32">
+            <path class="hb-path-main" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"/>
+            <path d="M7 16 27 16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MEGA-MENU PANEL -->
+  <div class="mega-menu-backdrop" id="mega-menu-backdrop"></div>
+  <div class="mega-menu-panel" id="mega-menu-panel">
+    <div class="container">
+      <div class="mega-menu__columns"></div>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel" id="mobile-menu-panel">
+      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">✕</button>
+      <nav class="mobile-menu-nav">
+        <div>
+          <button class="mobile-solutions-btn" id="mobile-solutions-btn">Solutions</button>
+          <div class="mobile-solutions-panel" id="mobile-solutions-panel">
+            <div id="mobile-solutions-accordion"></div>
+          </div>
+        </div>
+        <a href="platform.html">Platform</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary btn--full">Book a Consultation</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero bg-void bg-grid">
+      <video
+        class="hero__bg-video"
+        src="videos/vedio.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        aria-hidden="true"
+      ></video>
+      <div class="hero__bg-gradient"></div>
+
+      <!-- Animated SVG grid overlay -->
+      <svg class="hero__svg-grid" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="0" y1="25%" x2="100%" y2="25%" class="hero-grid-line" style="animation-delay:0.8s"/>
+        <line x1="0" y1="75%" x2="100%" y2="75%" class="hero-grid-line" style="animation-delay:1.3s"/>
+        <line x1="20%" y1="0" x2="20%" y2="100%" class="hero-grid-line" style="animation-delay:1.8s"/>
+        <line x1="80%" y1="0" x2="80%" y2="100%" class="hero-grid-line" style="animation-delay:2.3s"/>
+        <circle cx="20%" cy="25%" r="2.5" class="hero-detail-dot" style="animation-delay:2.8s"/>
+        <circle cx="80%" cy="25%" r="2.5" class="hero-detail-dot" style="animation-delay:3s"/>
+        <circle cx="20%" cy="75%" r="2.5" class="hero-detail-dot" style="animation-delay:3.2s"/>
+        <circle cx="80%" cy="75%" r="2.5" class="hero-detail-dot" style="animation-delay:3.4s"/>
+      </svg>
+
+
+      <!-- Floating particles -->
+      <div class="hero-float-dot" style="top:28%;left:12%;animation-delay:0.3s"></div>
+      <div class="hero-float-dot" style="top:65%;left:88%;animation-delay:0.9s"></div>
+      <div class="hero-float-dot" style="top:45%;left:7%;animation-delay:1.6s"></div>
+      <div class="hero-float-dot" style="top:72%;left:92%;animation-delay:2.2s"></div>
+
+      <div class="container" style="width:100%;">
+        <div class="hero__grid">
+
+          <!-- Text -->
+          <div class="hero__text">
+            <div class="hero-animate">
+              <span class="section-label">Zenxian — Architecting the Future of Intelligence</span>
+            </div>
+
+            <h1 class="hero__h1" style="font-family:'Manrope',sans-serif;">
+              <span class="word-animate" data-delay="700">We</span>
+              <span class="word-animate" data-delay="850">build</span>
+              <span class="word-animate" data-delay="1000">the</span>
+              <span class="word-animate" data-delay="1150">systems</span><br />
+              <span class="word-animate" data-delay="1300">that</span>
+              <span class="word-animate" data-delay="1450">power</span>
+              <span class="word-animate" data-delay="1600">tomorrow's</span><br />
+              <span class="word-animate accent" data-delay="1750">businesses.</span>
+            </h1>
+
+            <div class="hero__buttons hero-animate">
+              <a href="contact.html" class="btn btn--primary">Book a Consultation</a>
+              <a href="case-studies.html" class="btn btn--ghost">Explore Our Work</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Mouse gradient (fixed, full-page) -->
+    <div id="hero-mouse-gradient" aria-hidden="true"></div>
+
+    <!-- LOGO BAR -->
+    <section class="logobar">
+      <div class="logobar__track">
+        <span class="logobar__item">TECHTRON</span>
+        <span class="logobar__item">NEXUS.CORE</span>
+        <span class="logobar__item">AETHER_SYS</span>
+        <span class="logobar__item">SYNTHETIC_</span>
+        <span class="logobar__item">QUANTUM_LABS</span>
+        <span class="logobar__item">TECHTRON</span>
+        <span class="logobar__item">NEXUS.CORE</span>
+        <span class="logobar__item">AETHER_SYS</span>
+        <span class="logobar__item">SYNTHETIC_</span>
+        <span class="logobar__item">QUANTUM_LABS</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="logobar__item">TECHTRON</span>
+        <span class="logobar__item">NEXUS.CORE</span>
+        <span class="logobar__item">AETHER_SYS</span>
+        <span class="logobar__item">SYNTHETIC_</span>
+        <span class="logobar__item">QUANTUM_LABS</span>
+        <span class="logobar__item">TECHTRON</span>
+        <span class="logobar__item">NEXUS.CORE</span>
+        <span class="logobar__item">AETHER_SYS</span>
+        <span class="logobar__item">SYNTHETIC_</span>
+        <span class="logobar__item">QUANTUM_LABS</span>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY SECTION -->
+    <section class="methodology">
+      <div class="container">
+        <div class="methodology__header anim-ready">
+          <div>
+            <span class="section-label" style="margin-bottom:24px;display:inline-flex;">Our Methodology</span>
+            <h2 class="methodology__h2">High-Resolution<br />Engineering</h2>
+          </div>
+          <p class="methodology__subtitle">
+            Moving beyond standard SaaS to embrace the rigorous processes of
+            architectural software design.
+          </p>
+        </div>
+
+        <div class="methodology__grid stagger-grid">
+          <div class="methodology-card anim-ready">
+            <div class="methodology-card__row">
+              <span class="methodology-card__icon">⬡</span>
+              <span class="methodology-card__label">01 / ARCH</span>
+            </div>
+            <h3 class="methodology-card__title">AI STRATEGY</h3>
+            <p class="methodology-card__desc">Developing long-term roadmap integration for large language models and predictive analytics within legacy enterprise frameworks.</p>
+          </div>
+
+          <div class="methodology-card anim-ready">
+            <div class="methodology-card__row">
+              <span class="methodology-card__icon">⬢</span>
+              <span class="methodology-card__label">02 / DEV</span>
+            </div>
+            <h3 class="methodology-card__title">CUSTOM SOFTWARE</h3>
+            <p class="methodology-card__desc">Engineering bespoke, high-performance distributed systems designed for massive scale and zero-latency technical requirements.</p>
+          </div>
+
+          <div class="methodology-card anim-ready">
+            <div class="methodology-card__row">
+              <span class="methodology-card__icon">◈</span>
+              <span class="methodology-card__label">03 / DATA</span>
+            </div>
+            <h3 class="methodology-card__title">DATA ECOSYSTEMS</h3>
+            <p class="methodology-card__desc">Architecting robust data pipelines that transform fragmented informational inputs into structured, actionable intelligence hubs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES CAROUSEL -->
+    <section class="services-carousel">
+      <div class="container">
+
+        <!-- Header row: label+heading left, arrows right -->
+        <div class="sc-header anim-ready">
+          <div class="sc-header__left">
+            <span class="section-label" style="margin-bottom:16px;display:inline-flex;">What We Build</span>
+            <h2 class="methodology__h2">End-to-end software engineering for enterprises that demand more.</h2>
+          </div>
+          <div class="sc-header__right">
+            <button class="sc-arrow sc-arrow--prev" aria-label="Previous">&#8592;</button>
+            <button class="sc-arrow sc-arrow--next" aria-label="Next">&#8594;</button>
+          </div>
+        </div>
+
+        <!-- Carousel track -->
+        <div class="sc-track-wrap">
+          <div class="sc-track" id="sc-track">
+
+            <div class="sc-card">
+              <img class="sc-card__img" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80" alt="Web Development" loading="lazy" />
+              <div class="sc-card__overlay"></div>
+              <div class="sc-card__body">
+                <h3 class="sc-card__title">Web Development</h3>
+                <p class="sc-card__desc">High-performance web platforms engineered from the ground up — scalable applications using modern frameworks and cloud-native architecture.</p>
+                <a href="#" class="sc-card__link">Read more &#8594;</a>
+              </div>
+            </div>
+
+            <div class="sc-card">
+              <img class="sc-card__img" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="POS &amp; Retail Systems" loading="lazy" />
+              <div class="sc-card__overlay"></div>
+              <div class="sc-card__body">
+                <h3 class="sc-card__title">POS &amp; Retail Systems</h3>
+                <p class="sc-card__desc">Intelligent point-of-sale systems with inventory automation and real-time analytics — built for modern retail and F&amp;B operations.</p>
+                <a href="#" class="sc-card__link">Read more &#8594;</a>
+              </div>
+            </div>
+
+            <div class="sc-card">
+              <img class="sc-card__img" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="AI Integration &amp; Automation" loading="lazy" />
+              <div class="sc-card__overlay"></div>
+              <div class="sc-card__body">
+                <h3 class="sc-card__title">AI Integration &amp; Automation</h3>
+                <p class="sc-card__desc">LLM-powered tools, intelligent automation pipelines, and predictive systems — operationalizing AI within your existing workflows.</p>
+                <a href="#" class="sc-card__link">Read more &#8594;</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Dot pagination -->
+        <div class="sc-dots" id="sc-dots">
+          <button class="sc-dot sc-dot--active" data-index="0" aria-label="Slide 1"></button>
+          <button class="sc-dot" data-index="1" aria-label="Slide 2"></button>
+          <button class="sc-dot" data-index="2" aria-label="Slide 3"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PLATFORM / WHY ZENXIAN -->
+    <section class="platform-why">
+      <div class="container">
+        <div class="platform-why__grid">
+
+          <!-- Left -->
+          <div class="anim-ready">
+            <span class="section-label" style="margin-bottom:24px;display:inline-flex;">The Zenxian Platform</span>
+            <h2 class="platform-why__h2">Not a vendor.<br />A technical partner.</h2>
+            <p class="platform-why__p">We don't hand you a template and call it done. Every engagement begins with architectural thinking — understanding your systems, your goals, and the precise technical blueprint required to get you there.</p>
+            <a href="platform.html" class="btn btn--outline">Explore the Platform →</a>
+          </div>
+
+          <!-- Right: 3 features -->
+          <div class="platform-why__features anim-ready" style="transition-delay:0.15s;">
+            <div class="platform-why__feature">
+              <h4 class="platform-why__feature-title">B2B-First Thinking</h4>
+              <p class="platform-why__feature-desc">Every solution we build is engineered for business complexity — multi-user environments, role-based access, API integrations, and enterprise-grade security baked in by default.</p>
+            </div>
+            <div class="platform-why__feature">
+              <h4 class="platform-why__feature-title">AI-Forward by Design</h4>
+              <p class="platform-why__feature-desc">We embed intelligent capabilities — automation, predictions, NLP — into your systems as a core layer, not an afterthought. Future-proof from day one.</p>
+            </div>
+            <div class="platform-why__feature">
+              <h4 class="platform-why__feature-title">Full-Cycle Engineering</h4>
+              <p class="platform-why__feature-desc">From discovery and architecture to deployment and iteration — we own the full engineering lifecycle, so nothing falls through the cracks between teams.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio">
+      <div class="container">
+
+        <!-- Centered header -->
+        <div class="portfolio__header anim-ready">
+          <span class="section-label" style="margin-bottom:16px;display:inline-flex;">Portfolio</span>
+          <h2 class="portfolio__h2">Featured Engagements</h2>
+          <p class="portfolio__desc">Real-world systems engineered for enterprises operating at scale. From AI-powered finance to quantum-safe infrastructure.</p>
+          <a href="case-studies.html" class="portfolio__cta">Explore all case studies &#8594;</a>
+        </div>
+
+        <!-- 3-column blog-style card grid -->
+        <div class="portfolio__grid stagger-grid">
+
+          <div class="portfolio-card anim-ready">
+            <a href="case-studies.html" class="portfolio-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&fit=crop" alt="Global Banking Automation" loading="lazy" class="portfolio-card__img" />
+            </a>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag">Fintech Architecture</span>
+              <h3 class="portfolio-card__title"><a href="case-studies.html">Global Banking Automation</a></h3>
+              <p class="portfolio-card__desc">Engineering a distributed LLM layer for real-time risk assessment across 40+ international jurisdictions.</p>
+            </div>
+            <div class="portfolio-card__footer">
+              <a href="case-studies.html" class="portfolio-card__link">Read more &#8594;</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card anim-ready">
+            <a href="case-studies.html" class="portfolio-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80&fit=crop" alt="Supply Chain Neural Mesh" loading="lazy" class="portfolio-card__img" />
+            </a>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag">Logistics AI</span>
+              <h3 class="portfolio-card__title"><a href="case-studies.html">Supply Chain Neural Mesh</a></h3>
+              <p class="portfolio-card__desc">A self-optimizing logistics framework utilizing predictive analytics to mitigate global transit bottlenecks.</p>
+            </div>
+            <div class="portfolio-card__footer">
+              <a href="case-studies.html" class="portfolio-card__link">Read more &#8594;</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card anim-ready">
+            <a href="case-studies.html" class="portfolio-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80&fit=crop" alt="Quantum-Safe Ledger" loading="lazy" class="portfolio-card__img" />
+            </a>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag">Cybersecurity</span>
+              <h3 class="portfolio-card__title"><a href="case-studies.html">Quantum-Safe Ledger</a></h3>
+              <p class="portfolio-card__desc">Engineering a post-quantum cryptographic layer for sovereign wealth fund transaction verification.</p>
+            </div>
+            <div class="portfolio-card__footer">
+              <a href="case-studies.html" class="portfolio-card__link">Read more &#8594;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats__header anim-ready">
+          <span class="section-label" style="margin-bottom:16px;display:inline-flex;">Platform Scale</span>
+          <h2 class="stats__h2">Designed for Institution-Grade Scale</h2>
+          <p class="stats__p">Our architecture uses 128-bit encryption and modular micro-services to ensure your infrastructure remains resilient under extreme traffic.</p>
+        </div>
+        <div class="stats__row anim-ready">
+          <div class="stats__item">
+            <div class="stats__value">99.9%</div>
+            <div class="stats__label">Uptime SLA</div>
+          </div>
+          <div class="stats__divider"></div>
+          <div class="stats__item">
+            <div class="stats__value">12ms</div>
+            <div class="stats__label">Avg Latency</div>
+          </div>
+          <div class="stats__divider"></div>
+          <div class="stats__item">
+            <div class="stats__value">100+</div>
+            <div class="stats__label">Enterprise Clients</div>
+          </div>
+          <div class="stats__divider"></div>
+          <div class="stats__item">
+            <div class="stats__value">40%</div>
+            <div class="stats__label">Avg Latency Reduction</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH US -->
+    <section class="why-us">
+      <div class="container">
+        <span class="section-label anim-ready">Why work with us</span>
+        <div class="why-us__grid stagger-grid">
+
+          <div class="why-us-card why-us-card--coral anim-ready">
+            <div class="why-us-card__stat">90<span class="why-us-card__unit">%</span></div>
+            <p class="why-us-card__desc">of our clients say we have met and exceeded their expectations</p>
+          </div>
+
+          <div class="why-us-card why-us-card--mauve anim-ready">
+            <div class="why-us-card__stat">Top<span class="why-us-card__unit">1%</span></div>
+            <p class="why-us-card__desc">of top talent across 3 continents</p>
+          </div>
+
+          <div class="why-us-card why-us-card--gold anim-ready">
+            <div class="why-us-card__stat">100<span class="why-us-card__unit">+</span></div>
+            <p class="why-us-card__desc">Global and enterprise companies transformed</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ZENXIAN — TEXT PARALLAX SCROLL -->
+    <section class="tpc-section" id="about-zenxian">
+
+      <!-- Panel 1: Who We Are -->
+      <div class="tpc-panel" data-tpc-panel>
+        <div class="tpc-sticky-zone" data-tpc-zone>
+          <div class="tpc-img" data-tpc-img
+            style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80&fit=crop')">
+            <div class="tpc-img-overlay" data-tpc-overlay></div>
+          </div>
+          <div class="tpc-copy" data-tpc-copy>
+            <p class="tpc-subheading">Who We Are</p>
+            <h2 class="tpc-heading">Built by builders.</h2>
+          </div>
+        </div>
+        <div class="tpc-content">
+          <div class="tpc-content__grid">
+            <h3 class="tpc-content__h3">Engineers who think like business partners</h3>
+            <div class="tpc-content__body">
+              <p>Zenxian was founded on a single conviction: enterprise software should match the precision and ambition of the businesses it powers. We're a team of architects, developers, and AI specialists who care as much about your outcomes as you do.</p>
+              <p>We partner exclusively with B2B companies — those operating in complex environments that need technology engineered to perform without compromise.</p>
+              <a href="about.html" class="btn btn--outline" style="margin-top:8px;">About us &#8594;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- HOME CTA -->
+    <section class="cta-section bg-surface bg-grid">
+      <div class="container-narrow">
+        <div class="anim-ready">
+          <h2>Ready to scale your systems?<br /><em class="accent" style="font-style:normal;">Let's build.</em></h2>
+          <div class="cta-section__buttons">
+            <a href="contact.html" class="btn btn--primary">Initiate Project</a>
+            <a href="#" class="btn btn--outline">View Documentation →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__bg-gradient" aria-hidden="true"></div>
+
+    <div class="container footer__inner">
+
+      <!-- Top grid -->
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__brand-namerow">
+            <img src="images/logo.png" alt="" class="footer__logo-img" aria-hidden="true">
+            <span class="footer__brand-name">Zenxian</span>
+          </div>
+          <p class="footer__brand-desc">High-precision technical architecture for global enterprises. Engineering stability in an age of digital volatility.</p>
+        </div>
+
+        <!-- Company links -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <ul class="footer__col-links">
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="case-studies.html" class="footer__link">Case Studies</a></li>
+            <li><a href="platform.html" class="footer__link">Platform</a></li>
+            <li><a href="contact.html" class="footer__link">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Helpful links -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Helpful Links</h4>
+          <ul class="footer__col-links">
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+            <li><a href="contact.html" class="footer__link">Support</a></li>
+            <li><a href="contact.html" class="footer__link footer__link--live">Live Chat <span class="footer__pulse"></span></a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact Us</h4>
+          <ul class="footer__col-links footer__contact">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:hello@zenxian.com" class="footer__link">hello@zenxian.com</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+              <a href="tel:+1234567890" class="footer__link">+1 (234) 567-890</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="footer__link">San Francisco, CA</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Divider -->
+      <hr class="footer__hr" />
+
+      <!-- Bottom row -->
+      <div class="footer__bottom">
+        <div class="footer__socials">
+          <a href="#" aria-label="Twitter" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.732-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+        </div>
+        <p class="footer__copyright">© 2026 Zenxian Technical Systems. All rights reserved.</p>
+      </div>
+
+    </div>
+
+    <!-- SVG text hover effect -->
+    <div class="footer__text-hover" aria-hidden="true">
+      <svg id="footer-svg" width="100%" height="100%" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" class="footer__text-svg">
+        <defs>
+          <linearGradient id="footerTextGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="300" y2="0">
+            <stop offset="0%"   stop-color="#eab308" />
+            <stop offset="25%"  stop-color="#ef4444" />
+            <stop offset="50%"  stop-color="#32C8D9" />
+            <stop offset="75%"  stop-color="#06b6d4" />
+            <stop offset="100%" stop-color="#8b5cf6" />
+          </linearGradient>
+          <radialGradient id="footerRevealMask" gradientUnits="userSpaceOnUse" cx="50%" cy="50%" r="20%">
+            <stop offset="0%"   stop-color="white" />
+            <stop offset="100%" stop-color="black" />
+          </radialGradient>
+          <mask id="footerTextMask">
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#footerRevealMask)" />
+          </mask>
+        </defs>
+        <!-- Outline (dim, appears on hover) -->
+        <text id="footer-text-outline" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+          stroke="rgba(255,255,255,0.15)" stroke-width="0.3" fill="none"
+          font-family="Manrope,sans-serif" font-size="36" font-weight="900"
+          style="opacity:0;transition:opacity 0.4s;">ZENXIAN</text>
+        <!-- Animated stroke draw-in -->
+        <text id="footer-text-draw" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+          stroke="#32C8D9" stroke-width="0.3" fill="none"
+          font-family="Manrope,sans-serif" font-size="36" font-weight="900"
+          stroke-dasharray="1000" stroke-dashoffset="1000">ZENXIAN</text>
+        <!-- Hover gradient reveal -->
+        <text id="footer-text-color" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+          stroke="url(#footerTextGradient)" stroke-width="0.3" fill="none"
+          font-family="Manrope,sans-serif" font-size="36" font-weight="900"
+          mask="url(#footerTextMask)" style="opacity:0;transition:opacity 0.4s;">ZENXIAN</text>
+      </svg>
+    </div>
+
+  </footer>
+
+  <script src="data/services-data.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/mega-menu.js" defer></script>
+  <script>
+    // Animate the hero illustration separately (scale + opacity)
+    document.addEventListener('DOMContentLoaded', function () {
+      var ill = document.getElementById('hero-illustration');
+      if (ill) {
+        setTimeout(function () {
+          ill.style.opacity = '1';
+          ill.style.transform = 'scale(1)';
+        }, 300);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Zenxian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="images/logo.png" alt="" class="navbar__logo-img" aria-hidden="true">
+          Zenxian
+        </a>
+        <nav class="navbar__links">
+          <div class="mega-menu-trigger" id="mega-menu-trigger"><span class="navbar__link">Solutions <span class="mega-menu-trigger__caret">▾</span></span></div>
+          <a href="platform.html" class="navbar__link">Platform</a>
+          <a href="case-studies.html" class="navbar__link">Case Studies</a>
+          <a href="about.html" class="navbar__link navbar__link--active">About</a>
+          <a href="contact.html" class="navbar__link">Contact</a>
+        </nav>
+        <div class="navbar__cta">
+          <a href="contact.html" class="btn btn--ghost" style="font-size:0.75rem;">Book a Consultation</a>
+        </div>
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+          <svg viewBox="0 0 32 32"><path class="hb-path-main" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"/><path d="M7 16 27 16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MEGA-MENU PANEL -->
+  <div class="mega-menu-backdrop" id="mega-menu-backdrop"></div>
+  <div class="mega-menu-panel" id="mega-menu-panel"><div class="container"><div class="mega-menu__columns"></div></div></div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel" id="mobile-menu-panel">
+      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">✕</button>
+      <nav class="mobile-menu-nav">
+        <div><button class="mobile-solutions-btn" id="mobile-solutions-btn">Solutions</button><div class="mobile-solutions-panel" id="mobile-solutions-panel"><div id="mobile-solutions-accordion"></div></div></div>
+        <a href="platform.html">Platform</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary btn--full">Book a Consultation</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+
+      <!-- Background image -->
+      <div class="about-hero__bg" aria-hidden="true"></div>
+
+      <!-- Dark overlay -->
+      <div class="about-hero__overlay" aria-hidden="true"></div>
+
+      <!-- Centered content -->
+      <div class="about-hero__content">
+        <h1 class="about-hero__h1">
+          <span class="about-hero__h1-white">Blueprints of</span>
+          <span class="about-hero__h1-cyan">Intelligence</span>
+        </h1>
+        <p class="about-hero__subtitle">
+          We reject the cult of speed. We embrace the discipline of structural
+          integrity. Zenxian designs digital systems that endure as long as the
+          physical monuments they manage.
+        </p>
+        <div class="about-hero__btns">
+          <a href="contact.html" class="btn btn--primary">Book a Consultation</a>
+        </div>
+      </div>
+
+      <!-- Bottom fade to void -->
+      <div class="about-hero__bottom-fade" aria-hidden="true"></div>
+
+    </section>
+
+    <!-- STRUCTURAL PURITY -->
+    <section class="structural-purity">
+      <div class="container">
+        <div class="structural-purity__grid stagger-grid">
+
+          <!-- Left cell -->
+          <div class="structural-purity__cell anim-ready">
+            <svg class="structural-purity__icon-svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <h3 class="structural-purity__title">Structural Purity</h3>
+            <p class="structural-purity__p">
+              Code is not a commodity; it is infrastructure. We apply civil
+              engineering principles to software architecture, ensuring
+              scalability is baked into the foundation.
+            </p>
+            <span class="structural-purity__metric">Metric: Zero Regression Policy</span>
+          </div>
+
+          <!-- Center cell -->
+          <div class="structural-purity__cell structural-purity__cell--center anim-ready">
+            <div class="sp-center-bg" aria-hidden="true"></div>
+            <div class="sp-center-glow" aria-hidden="true"></div>
+            <h2 class="structural-purity__center-h2">Elegance<br />Through<br /><span class="sp-center-accent">Precision.</span></h2>
+          </div>
+
+          <!-- Right cell (split) -->
+          <div class="structural-purity__cell structural-purity__cell--right anim-ready">
+            <div class="structural-purity__cell--right-top">
+              <div class="structural-purity__stat-value stat-counter" data-target="0.01" data-suffix="%" data-decimals="2">0%</div>
+              <div class="structural-purity__stat-label">Failure Tolerance</div>
+              <p class="structural-purity__p" style="margin:0;">
+                Our methodology treats every micro-interaction as a critical
+                load-bearing point. This obsessive focus on the "Great Technical
+                Details" creates the "Global Institutional Trust" our clients rely on.
+              </p>
+            </div>
+            <div class="structural-purity__cell--right-bottom">
+              <svg class="structural-purity__icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <h4 class="structural-purity__title">Fortress Logic</h4>
+              <p class="structural-purity__p" style="margin:0;">
+                Security is not an add-on. It is the geometric result of perfect
+                design. Our systems are inherently secure because they are
+                architecturally sound.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO STRIP -->
+    <div style="position:relative;height:400px;background:#001620;">
+      <img
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&fit=crop"
+        alt="Zenxian team workspace"
+        style="width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.45) saturate(0.8);
+          -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 100%);
+          mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 100%);"
+      />
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:48px;">
+        <blockquote style="text-align:center;max-width:640px;margin:0;">
+          <p style="font-family:'Manrope',sans-serif;font-size:clamp(1.25rem,3vw,2rem);font-weight:900;text-transform:uppercase;letter-spacing:0.05em;color:#fff;margin:0 0 16px;">
+            "Think Deep and Build Forever."
+          </p>
+          <cite style="font-size:0.75rem;color:rgba(255,255,255,0.4);font-style:normal;text-transform:uppercase;letter-spacing:0.2em;">
+            — The Zenxian Engineering Principle
+          </cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- RIGOROUS COMMIT -->
+    <section class="rigorous-commit">
+      <div class="container">
+        <div class="rigorous-commit__grid anim-ready">
+
+          <!-- Left -->
+          <div>
+            <h2 class="rigorous-commit__h2">The Art of the<br />Rigorous Commit</h2>
+            <p class="rigorous-commit__p">
+              At Zenxian, we believe that "Move Fast and Break Things" is a
+              reckless philosophy for high-stakes industries. We replace it with
+              "Think Deep and Build Forever."
+            </p>
+            <p class="rigorous-commit__p">
+              Every line of code undergoes a structural audit akin to checking
+              the stress-load of a skyscraper's beams. We don't just ship
+              software; we commission digital assets.
+            </p>
+            <a href="#" class="btn btn--outline">Read Our Standards</a>
+          </div>
+
+          <!-- Right: code block -->
+          <div class="code-block">
+            <div class="code-block__dots">
+              <span class="code-block__dot"></span>
+              <span class="code-block__dot"></span>
+              <span class="code-block__dot"></span>
+            </div>
+            <div class="code-block__body">
+              <div><span class="comment">// Specification 001-A</span></div>
+              <div><span class="kw">const</span> <span class="val">variable</span> = <span class="val">true</span></div>
+              <div><span class="kw">function</span> <span class="val">verifyPath</span>()</div>
+              <div class="pl"><span class="kw">let</span> <span class="val">redundant</span> = <span class="str">PATH_LOGIC</span></div>
+              <div class="pl"><span class="comment">// Quantum-safe encryption...</span></div>
+              <div class="pl"><span class="kw">return</span> <span class="val">stateless_session</span></div>
+              <div><span class="comment">}</span></div>
+              <div><span class="val" style="opacity:0.3;">management()</span></div>
+            </div>
+            <div class="code-block__badge">Spec 001-A</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEMATIC PROGRESSION -->
+    <section class="systematic-progression">
+      <div class="container">
+
+        <div class="systematic-progression__header anim-ready">
+          <span class="section-label" style="justify-content:center;margin-bottom:16px;">Our Process</span>
+          <h2 class="systematic-progression__title">Systematic<br><span style="background:linear-gradient(135deg,#32C8D9,#1F8DA6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Progression</span></h2>
+          <p class="systematic-progression__subtitle">Every engagement follows four non-negotiable phases — no shortcuts, no exceptions.</p>
+        </div>
+
+        <div class="steps-grid stagger-grid">
+
+          <div class="step-card anim-ready">
+            <div class="step-card__top">
+              <div class="step-card__number">01</div>
+              <svg class="step-card__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+            <h3 class="step-card__title">Discovery</h3>
+            <p class="step-card__desc">Auditing the existing load-bearing structures of your business data.</p>
+          </div>
+
+          <div class="step-card anim-ready">
+            <div class="step-card__top">
+              <div class="step-card__number">02</div>
+              <svg class="step-card__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 class="step-card__title">Modeling</h3>
+            <p class="step-card__desc">Visualizing the logic flow within a 1px grid constraint for maximum clarity.</p>
+          </div>
+
+          <div class="step-card anim-ready">
+            <div class="step-card__top">
+              <div class="step-card__number">03</div>
+              <svg class="step-card__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="step-card__title">Forging</h3>
+            <p class="step-card__desc">The construction phase where modular units are stress-tested in isolation.</p>
+          </div>
+
+          <div class="step-card anim-ready">
+            <div class="step-card__top">
+              <div class="step-card__number">04</div>
+              <svg class="step-card__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+            <h3 class="step-card__title">Deployment</h3>
+            <p class="step-card__desc">Transition to live environments with zero-downtime structural handovers.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR EXPERTS -->
+    <section class="our-experts" id="our-experts">
+      <div class="container">
+
+        <div class="our-experts__header anim-ready">
+          <span class="section-label" style="justify-content:center;margin-bottom:16px;">The Team</span>
+          <h2 class="our-experts__title">Meet Our <span class="our-experts__title-accent">Experts</span></h2>
+          <p class="our-experts__subtitle">The minds behind every blueprint — architects, engineers, and strategists who build systems that last.</p>
+        </div>
+
+        <div class="swiper experts-swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="expert-card" data-expert="0" role="button" tabindex="0">
+                <div class="expert-card__img-wrap">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="Marcus Chen" class="expert-card__img" />
+                  <div class="expert-card__overlay"><span>View Profile</span></div>
+                </div>
+                <div class="expert-card__info">
+                  <h3 class="expert-card__name">Marcus Chen</h3>
+                  <span class="expert-card__role">Chief Technology Officer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="expert-card" data-expert="1" role="button" tabindex="0">
+                <div class="expert-card__img-wrap">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=80" alt="Sarah Kovacs" class="expert-card__img" />
+                  <div class="expert-card__overlay"><span>View Profile</span></div>
+                </div>
+                <div class="expert-card__info">
+                  <h3 class="expert-card__name">Sarah Kovacs</h3>
+                  <span class="expert-card__role">Head of AI Engineering</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="expert-card" data-expert="2" role="button" tabindex="0">
+                <div class="expert-card__img-wrap">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80" alt="Daniel Osei" class="expert-card__img" />
+                  <div class="expert-card__overlay"><span>View Profile</span></div>
+                </div>
+                <div class="expert-card__info">
+                  <h3 class="expert-card__name">Daniel Osei</h3>
+                  <span class="expert-card__role">Lead Systems Architect</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="expert-card" data-expert="3" role="button" tabindex="0">
+                <div class="expert-card__img-wrap">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80" alt="Priya Nair" class="expert-card__img" />
+                  <div class="expert-card__overlay"><span>View Profile</span></div>
+                </div>
+                <div class="expert-card__info">
+                  <h3 class="expert-card__name">Priya Nair</h3>
+                  <span class="expert-card__role">Principal Data Engineer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="expert-card" data-expert="4" role="button" tabindex="0">
+                <div class="expert-card__img-wrap">
+                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80" alt="James Whitfield" class="expert-card__img" />
+                  <div class="expert-card__overlay"><span>View Profile</span></div>
+                </div>
+                <div class="expert-card__info">
+                  <h3 class="expert-card__name">James Whitfield</h3>
+                  <span class="expert-card__role">Security Engineering Lead</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination experts-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERT MODAL -->
+    <div class="expert-modal" id="expert-modal" aria-hidden="true">
+      <div class="expert-modal__backdrop" id="expert-modal-backdrop"></div>
+      <div class="expert-modal__panel" role="dialog" aria-modal="true">
+        <button class="expert-modal__close" id="expert-modal-close" aria-label="Close">✕</button>
+        <div class="expert-modal__inner">
+          <div class="expert-modal__photo-col">
+            <img id="modal-photo" src="" alt="" class="expert-modal__photo" />
+            <div class="expert-modal__socials">
+              <a href="#" class="expert-modal__social-link">LinkedIn</a>
+              <a href="#" class="expert-modal__social-link">GitHub</a>
+            </div>
+          </div>
+          <div class="expert-modal__body">
+            <span id="modal-role" class="expert-modal__role"></span>
+            <h3 id="modal-name" class="expert-modal__name"></h3>
+            <p id="modal-bio" class="expert-modal__bio"></p>
+            <div class="expert-modal__skills-label">Specialisations</div>
+            <div id="modal-skills" class="expert-modal__skills"></div>
+            <div class="expert-modal__stats">
+              <div class="expert-modal__stat"><span id="modal-years"></span><small>Years</small></div>
+              <div class="expert-modal__stat"><span id="modal-projects"></span><small>Projects</small></div>
+              <div class="expert-modal__stat"><span id="modal-clients"></span><small>Clients</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT CTA -->
+    <section class="cta-section bg-void bg-grid">
+      <div class="container-narrow">
+        <div class="anim-ready">
+          <h2>Ready to Build for<br /><em class="accent" style="font-style:normal;color:#32C8D9;">Permanence?</em></h2>
+          <p>Our consultation isn't a sales pitch. It's an architectural review of your technical ambition.</p>
+          <div class="cta-section__buttons">
+            <a href="contact.html" class="btn btn--primary">Initiate Consultation</a>
+            <a href="#" class="btn btn--outline">The Technical Whitepaper</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__bg-gradient" aria-hidden="true"></div>
+
+    <div class="container footer__inner">
+
+      <!-- Top grid -->
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__brand-namerow">
+            <img src="images/logo.png" alt="" class="footer__logo-img" aria-hidden="true">
+            <span class="footer__brand-name">Zenxian</span>
+          </div>
+          <p class="footer__brand-desc">High-precision technical architecture for global enterprises. Engineering stability in an age of digital volatility.</p>
+        </div>
+
+        <!-- Company links -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <ul class="footer__col-links">
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="case-studies.html" class="footer__link">Case Studies</a></li>
+            <li><a href="platform.html" class="footer__link">Platform</a></li>
+            <li><a href="contact.html" class="footer__link">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Helpful links -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Helpful Links</h4>
+          <ul class="footer__col-links">
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+            <li><a href="contact.html" class="footer__link">Support</a></li>
+            <li><a href="contact.html" class="footer__link footer__link--live">Live Chat <span class="footer__pulse"></span></a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact Us</h4>
+          <ul class="footer__col-links footer__contact">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:hello@zenxian.com" class="footer__link">hello@zenxian.com</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+              <a href="tel:+1234567890" class="footer__link">+1 (234) 567-890</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="footer__link">San Francisco, CA</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Divider -->
+      <hr class="footer__hr" />
+
+      <!-- Bottom row -->
+      <div class="footer__bottom">
+        <div class="footer__socials">
+          <a href="#" aria-label="Twitter" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.732-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+        </div>
+        <p class="footer__copyright">© 2026 Zenxian Technical Systems. All rights reserved.</p>
+      </div>
+
+    </div>
+
+    <!-- SVG text hover effect -->
+    <div class="footer__text-hover" aria-hidden="true">
+      <svg id="footer-svg" width="100%" height="100%" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" class="footer__text-svg">
+        <defs>
+          <linearGradient id="footerTextGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="300" y2="0">
+            <stop offset="0%"   stop-color="#eab308" />
+            <stop offset="25%"  stop-color="#ef4444" />
+            <stop offset="50%"  stop-color="#32C8D9" />
+            <stop offset="75%"  stop-color="#06b6d4" />
+            <stop offset="100%" stop-color="#8b5cf6" />
+          </linearGradient>
+          <radialGradient id="footerRevealMask" gradientUnits="userSpaceOnUse" cx="50%" cy="50%" r="20%">
+            <stop offset="0%"   stop-color="white" />
+            <stop offset="100%" stop-color="black" />
+          </radialGradient>
+          <mask id="footerTextMask">
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#footerRevealMask)" />
+          </mask>
+        </defs>
+        <text id="footer-text-outline" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+          stroke="rgba(255,255,255,0.15)" stroke-width="0.3" fill="none"
+          font-family="Manrope,sans-serif" font-size="36" font-weight="900"
+          style="opacity:0;transition:opacity 0.4s;">ZENXIAN</text>
+        <text id="footer-text-draw" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+          stroke="#32C8D9" stroke-width="0.3" fill="none"
+          font-family="Manrope,sans-serif" font-size="36" font-weight="900"
+          stroke-dasharray="1000" stroke-dashoffset="1000">ZENXIAN</text>
+        <text id="footer-text-color" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+          stroke="url(#footerTextGradient)" stroke-width="0.3" fill="none"
+          font-family="Manrope,sans-serif" font-size="36" font-weight="900"
+          mask="url(#footerTextMask)" style="opacity:0;transition:opacity 0.4s;">ZENXIAN</text>
+      </svg>
+    </div>
+
+  </footer>
+
+  <script src="data/services-data.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/mega-menu.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // ── Expert data ──────────────────────────────────────────────
+    var experts = [
+      {
+        name: "Marcus Chen",
+        role: "Chief Technology Officer",
+        photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80",
+        bio: "Marcus brings 18 years of experience designing resilient distributed systems for Fortune 500 companies. He pioneered Zenxian's zero-regression architecture doctrine and leads all technical strategy decisions.",
+        skills: ["Distributed Systems", "Cloud Architecture", "Technical Strategy", "Team Leadership"],
+        years: "18+", projects: "120+", clients: "40+"
+      },
+      {
+        name: "Sarah Kovacs",
+        role: "Head of AI Engineering",
+        photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=80",
+        bio: "Sarah specialises in production-grade machine learning systems and large-scale data pipelines. Her work on predictive infrastructure monitoring has reduced client downtime by an average of 94%.",
+        skills: ["Machine Learning", "Neural Networks", "MLOps", "Data Pipelines"],
+        years: "12+", projects: "85+", clients: "28+"
+      },
+      {
+        name: "Daniel Osei",
+        role: "Lead Systems Architect",
+        photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=80",
+        bio: "Daniel has architected enterprise platforms across fintech, healthcare and logistics sectors. His modular design philosophy ensures systems remain maintainable and extensible over decades, not quarters.",
+        skills: ["Enterprise Architecture", "Microservices", "API Design", "Domain-Driven Design"],
+        years: "15+", projects: "95+", clients: "35+"
+      },
+      {
+        name: "Priya Nair",
+        role: "Principal Data Engineer",
+        photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop&q=80",
+        bio: "Priya designs the data foundations that power intelligent products. Her expertise spans real-time streaming architectures and analytical warehousing, turning raw data into competitive infrastructure.",
+        skills: ["Data Engineering", "Stream Processing", "Data Warehousing", "Analytics"],
+        years: "10+", projects: "70+", clients: "22+"
+      },
+      {
+        name: "James Whitfield",
+        role: "Security Engineering Lead",
+        photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&auto=format&fit=crop&q=80",
+        bio: "James applies zero-trust principles to every engagement, ensuring security is structural rather than cosmetic. He has led compliance and hardening initiatives for regulated industries across three continents.",
+        skills: ["Zero-Trust Security", "Penetration Testing", "Compliance", "Infrastructure Hardening"],
+        years: "14+", projects: "60+", clients: "30+"
+      }
+    ];
+
+    // ── Init Swiper ──────────────────────────────────────────────
+    var expertSwiper = new Swiper('.experts-swiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 'auto',
+      coverflowEffect: { rotate: 0, stretch: 0, depth: 120, modifier: 2.5, slideShadows: false },
+      autoplay: { delay: 2500, disableOnInteraction: false },
+      pagination: { el: '.experts-pagination', clickable: true },
+      speed: 600
+    });
+
+    // ── Modal logic ──────────────────────────────────────────────
+    var modal   = document.getElementById('expert-modal');
+    var backdrop = document.getElementById('expert-modal-backdrop');
+    var closeBtn = document.getElementById('expert-modal-close');
+
+    function openExpert(idx) {
+      var e = experts[idx];
+      if (!e) return;
+      document.getElementById('modal-photo').src = e.photo;
+      document.getElementById('modal-photo').alt = e.name;
+      document.getElementById('modal-name').textContent = e.name;
+      document.getElementById('modal-role').textContent = e.role;
+      document.getElementById('modal-bio').textContent  = e.bio;
+      document.getElementById('modal-years').textContent    = e.years;
+      document.getElementById('modal-projects').textContent = e.projects;
+      document.getElementById('modal-clients').textContent  = e.clients;
+      var skillsEl = document.getElementById('modal-skills');
+      skillsEl.innerHTML = '';
+      e.skills.forEach(function(s) {
+        var tag = document.createElement('span');
+        tag.className = 'expert-modal__skill-tag';
+        tag.textContent = s;
+        skillsEl.appendChild(tag);
+      });
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      expertSwiper.autoplay.stop();
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      expertSwiper.autoplay.start();
+    }
+
+    document.querySelectorAll('.expert-card').forEach(function(card) {
+      card.addEventListener('click', function() { openExpert(+this.dataset.expert); });
+      card.addEventListener('keydown', function(e) { if (e.key === 'Enter') openExpert(+this.dataset.expert); });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+  </script>
+
+</body>
+</html>
