@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Service — Zenxian</title>
+  <title>Careers — Zenxian</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
@@ -20,12 +20,9 @@
           Zenxian
         </a>
         <nav class="navbar__links">
-
-          <!-- Solutions mega-menu trigger -->
           <div class="mega-menu-trigger" id="mega-menu-trigger">
             <span class="navbar__link">Solutions <span class="mega-menu-trigger__caret">▾</span></span>
           </div>
-
           <a href="platform.html" class="navbar__link">Platform</a>
           <a href="case-studies.html" class="navbar__link">Case Studies</a>
           <a href="about.html" class="navbar__link">About</a>
@@ -43,11 +40,7 @@
 
   <!-- MEGA-MENU PANEL -->
   <div class="mega-menu-backdrop" id="mega-menu-backdrop"></div>
-  <div class="mega-menu-panel" id="mega-menu-panel">
-    <div class="container">
-      <div class="mega-menu__columns"></div>
-    </div>
-  </div>
+  <div class="mega-menu-panel" id="mega-menu-panel"><div class="container"><div class="mega-menu__columns"></div></div></div>
 
   <!-- MOBILE MENU -->
   <div id="mobile-menu">
@@ -72,129 +65,179 @@
 
   <main>
 
-    <!-- BREADCRUMB -->
-    <div class="breadcrumb">
-      <div class="container">
-        <nav class="breadcrumb__nav" id="svc-breadcrumb">
-          <a href="index.html" class="breadcrumb__item">Home</a>
-          <span class="breadcrumb__sep">›</span>
-          <span class="breadcrumb__item">Solutions</span>
-          <span class="breadcrumb__sep">›</span>
-          <span class="breadcrumb__item" id="svc-breadcrumb-cat"></span>
-          <span class="breadcrumb__sep">›</span>
-          <span class="breadcrumb__item breadcrumb__item--active" id="svc-breadcrumb-title">Loading…</span>
-        </nav>
-      </div>
-    </div>
-
-    <!-- SERVICE HERO -->
-    <section class="svc-hero">
-      <div class="svc-hero__bg" id="svc-hero-bg" aria-hidden="true"></div>
-      <div class="svc-hero__overlay" aria-hidden="true"></div>
-      <div class="svc-hero__content">
-        <div class="svc-hero__left">
-          <h1 class="svc-hero__h1" id="svc-title">Loading…</h1>
-          <p class="svc-hero__intro" id="svc-intro"></p>
-          <div class="svc-hero__btns">
-            <a href="case-studies.html" class="btn btn--primary">View Our Works</a>
-          </div>
-        </div>
-        <div class="svc-hero__right" id="svc-hero-highlights"></div>
-      </div>
-      <div class="svc-hero__bottom-fade" aria-hidden="true"></div>
-    </section>
-
-    <!-- INTRO + BENEFITS -->
-    <section class="svc-intro-section" id="svc-overview">
-      <div class="container">
-        <div class="svc-intro-grid">
-          <div class="svc-intro-left anim-ready">
-            <span class="section-label" style="margin-bottom:20px;display:inline-flex;">Overview</span>
-            <h2 class="svc-overview-h2" id="svc-overview-heading"></h2>
-            <p class="svc-overview-desc" id="svc-overview-desc"></p>
-            <a href="contact.html" class="btn btn--outline" style="margin-top:32px;">Get a Free Consultation</a>
-          </div>
-          <ul class="svc-benefits-grid" id="svc-benefits"></ul>
+    <!-- HERO -->
+    <section class="careers-hero">
+      <div class="careers-hero__bg" aria-hidden="true"></div>
+      <div class="careers-hero__overlay" aria-hidden="true"></div>
+      <div class="careers-hero__content">
+        <span class="section-label" style="margin-bottom:20px;display:inline-flex;">Careers</span>
+        <h1 class="careers-hero__h1">Build the Future <span class="careers-hero__accent">With Us</span></h1>
+        <p class="careers-hero__subtitle">
+          We are a growing team of innovators, engineers, and creators shaping impactful digital solutions.<br />
+          Join us and take the next step in your career journey.
+        </p>
+        <div class="careers-hero__btns">
+          <a href="#open-positions" class="btn btn--primary">View Open Positions</a>
         </div>
       </div>
+      <div class="careers-hero__bottom-fade" aria-hidden="true"></div>
     </section>
 
-    <!-- SHORT TEXT BANNER -->
-    <div class="svc-short-banner">
-      <div class="container">
-        <p class="svc-short-text" id="svc-short-text"></p>
-      </div>
-    </div>
-
-    <!-- FEATURE CARDS -->
-    <section class="svc-features-section">
-      <div class="container">
-        <div class="svc-section-header anim-ready">
-          <span class="section-label" style="margin-bottom:12px;display:inline-flex;">What We Do</span>
-          <h2 class="svc-section-h2">End-to-End Capabilities</h2>
-        </div>
-        <div class="svc-feature-cards" id="svc-feature-cards"></div>
-      </div>
-    </section>
-
-    <!-- MODERN FEATURES -->
-    <section class="svc-modern-section">
-      <div class="container">
-        <div class="svc-section-header anim-ready">
-          <span class="section-label" style="margin-bottom:12px;display:inline-flex;">Modern Standards</span>
-          <h2 class="svc-section-h2">Modern Features We Deliver</h2>
-        </div>
-        <div class="svc-modern-grid" id="svc-modern-features"></div>
-      </div>
-    </section>
-
-    <!-- SUB-PRODUCTS -->
-    <section class="svc-subproducts-section" id="svc-subproducts-section" style="display:none;">
-      <div class="container">
-        <div class="svc-section-header">
-          <span class="section-label" style="margin-bottom:12px;display:inline-flex;">Our Products</span>
-          <h2 class="svc-section-h2">What Bixbloom Offers</h2>
-        </div>
-        <div id="svc-subproducts"></div>
-      </div>
-    </section>
-
-    <!-- PROCESS FLOW -->
-    <section class="svc-process-section" id="svc-process-section" style="display:none;">
-      <div class="container">
-        <div class="svc-section-header">
-          <span class="section-label" style="margin-bottom:12px;display:inline-flex;">Our Process</span>
-          <h2 class="svc-section-h2">How We Work</h2>
-        </div>
-        <div class="svc-process-flow" id="svc-process-flow"></div>
-      </div>
-    </section>
-
-    <!-- CLOSING LINE -->
-    <div class="svc-closing">
+    <!-- ABOUT CAREERS -->
+    <section class="careers-about">
       <div class="container-narrow">
-        <p class="svc-closing-text" id="svc-closing"></p>
-      </div>
-    </div>
-
-    <!-- RELATED SERVICES -->
-    <section class="svc-related-section" style="padding:64px 0;background:var(--color-void);">
-      <div class="container">
-        <span class="section-label anim-ready" style="margin-bottom:32px;display:inline-flex;">Related Services</span>
-        <div class="related-grid stagger-grid" id="svc-related"></div>
+        <div class="careers-about__inner anim-ready">
+          <span class="section-label" style="margin-bottom:16px;display:inline-flex;">About Careers at Zenxian</span>
+          <p class="careers-about__text">
+            At Zenxian, we are continuously evolving and expanding our capabilities.
+            We are always looking for talented individuals who are passionate about technology, innovation, and making a real impact.
+            If you are driven, creative, and ready to grow — we would love to hear from you.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section bg-surface bg-grid">
+    <!-- WHY JOIN US -->
+    <section class="careers-why">
+      <div class="container">
+        <div class="careers-section-header anim-ready">
+          <span class="section-label" style="margin-bottom:12px;display:inline-flex;">Why Join Us</span>
+          <h2 class="careers-section-h2">Reasons to Grow With Zenxian</h2>
+        </div>
+        <div class="careers-why-grid">
+          <div class="careers-why-item">
+            <span class="careers-why-item__icon">◈</span>
+            <span class="careers-why-item__text">Career growth in a fast-growing company</span>
+          </div>
+          <div class="careers-why-item">
+            <span class="careers-why-item__icon">⬡</span>
+            <span class="careers-why-item__text">Opportunity to work on real-world projects</span>
+          </div>
+          <div class="careers-why-item">
+            <span class="careers-why-item__icon">⬢</span>
+            <span class="careers-why-item__text">Collaborative and supportive team environment</span>
+          </div>
+          <div class="careers-why-item">
+            <span class="careers-why-item__icon">◈</span>
+            <span class="careers-why-item__text">Continuous learning and skill development</span>
+          </div>
+          <div class="careers-why-item">
+            <span class="careers-why-item__icon">⬡</span>
+            <span class="careers-why-item__text">Flexible and modern working culture</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPEN POSITIONS -->
+    <section class="careers-positions" id="open-positions">
+      <div class="container">
+        <div class="careers-section-header anim-ready">
+          <span class="section-label" style="margin-bottom:12px;display:inline-flex;">Open Positions</span>
+          <h2 class="careers-section-h2">Join Our Team</h2>
+        </div>
+        <div class="careers-jobs-grid">
+
+          <div class="careers-jcard">
+            <div class="careers-jcard__top">
+              <span class="careers-jcard__num">01</span>
+              <span class="careers-jcard__type">Full-time</span>
+            </div>
+            <h3 class="careers-jcard__title">Frontend Developer</h3>
+            <p class="careers-jcard__desc">Build responsive, high-performance web interfaces using modern frameworks. You will collaborate closely with designers and backend engineers to deliver exceptional user experiences.</p>
+            <ul class="careers-jcard__skills">
+              <li>React / Next.js</li>
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="careers-jcard__footer">
+              <span class="careers-jcard__location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Remote / On-site
+              </span>
+              <a href="mailto:careers@zenxian.com" class="careers-jcard__btn">Apply Now →</a>
+            </div>
+          </div>
+
+          <div class="careers-jcard">
+            <div class="careers-jcard__top">
+              <span class="careers-jcard__num">02</span>
+              <span class="careers-jcard__type">Contract</span>
+            </div>
+            <h3 class="careers-jcard__title">UI/UX Designer</h3>
+            <p class="careers-jcard__desc">Create intuitive and visually compelling digital experiences. You will design wireframes, prototypes, and final UI assets for our web and mobile products.</p>
+            <ul class="careers-jcard__skills">
+              <li>Figma</li>
+              <li>Prototyping</li>
+              <li>User Research</li>
+            </ul>
+            <div class="careers-jcard__footer">
+              <span class="careers-jcard__location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Remote
+              </span>
+              <a href="mailto:careers@zenxian.com" class="careers-jcard__btn">Apply Now →</a>
+            </div>
+          </div>
+
+          <div class="careers-jcard">
+            <div class="careers-jcard__top">
+              <span class="careers-jcard__num">03</span>
+              <span class="careers-jcard__type">Full-time</span>
+            </div>
+            <h3 class="careers-jcard__title">QA Engineer</h3>
+            <p class="careers-jcard__desc">Ensure the quality and reliability of our digital products through thorough testing and automation. You will identify bugs, write test cases, and maintain quality standards.</p>
+            <ul class="careers-jcard__skills">
+              <li>Manual Testing</li>
+              <li>Test Automation</li>
+              <li>Bug Tracking</li>
+            </ul>
+            <div class="careers-jcard__footer">
+              <span class="careers-jcard__location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                On-site
+              </span>
+              <a href="mailto:careers@zenxian.com" class="careers-jcard__btn">Apply Now →</a>
+            </div>
+          </div>
+
+          <div class="careers-jcard careers-jcard--intern">
+            <div class="careers-jcard__top">
+              <span class="careers-jcard__num">04</span>
+              <span class="careers-jcard__type careers-jcard__type--intern">Internship</span>
+            </div>
+            <h3 class="careers-jcard__title">Internship Opportunities</h3>
+            <p class="careers-jcard__desc">Kickstart your career with hands-on experience in a real-world technology environment. We offer internship roles across development, design, and digital marketing.</p>
+            <ul class="careers-jcard__skills">
+              <li>Development</li>
+              <li>Design</li>
+              <li>Digital Marketing</li>
+            </ul>
+            <div class="careers-jcard__footer">
+              <span class="careers-jcard__location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Open for applications
+              </span>
+              <a href="mailto:careers@zenxian.com" class="careers-jcard__btn">Apply Now →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="careers-cta">
       <div class="container-narrow">
         <div class="anim-ready">
-          <h2>Ready to get started?<br /><em class="accent" style="font-style:normal;color:#32C8D9;">Let's build.</em></h2>
-          <p style="color:rgba(255,255,255,0.5);margin-bottom:32px;">Talk to our engineers about your requirements. No sales pitch — just honest technical advice.</p>
-          <div class="cta-section__buttons">
-            <a href="contact.html" class="btn btn--primary">Book a Consultation</a>
-            <a href="index.html" class="btn btn--outline">Back to Home</a>
-          </div>
+          <h2 class="careers-cta__h2">We are building a team that will shape the <em style="font-style:normal;color:#32C8D9;">future.</em></h2>
+          <p class="careers-cta__text">
+            If you believe you have the passion and potential to grow with us, we encourage you to apply.
+          </p>
+          <a href="mailto:careers@zenxian.com" class="careers-cta__email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            careers@zenxian.com
+          </a>
         </div>
       </div>
     </section>
@@ -204,13 +247,8 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__bg-gradient" aria-hidden="true"></div>
-
     <div class="container footer__inner">
-
-      <!-- Top grid -->
       <div class="footer__grid">
-
-        <!-- Brand -->
         <div class="footer__brand">
           <div class="footer__brand-namerow">
             <img src="images/logo.png" alt="" class="footer__logo-img" aria-hidden="true">
@@ -218,8 +256,6 @@
           </div>
           <p class="footer__brand-desc">High-precision technical architecture for global enterprises. Engineering stability in an age of digital volatility.</p>
         </div>
-
-        <!-- Company links -->
         <div class="footer__col">
           <h4 class="footer__col-title">Company</h4>
           <ul class="footer__col-links">
@@ -229,8 +265,6 @@
             <li><a href="careers.html" class="footer__link">Careers</a></li>
           </ul>
         </div>
-
-        <!-- Helpful links -->
         <div class="footer__col">
           <h4 class="footer__col-title">Helpful Links</h4>
           <ul class="footer__col-links">
@@ -240,8 +274,6 @@
             <li><a href="contact.html" class="footer__link footer__link--live">Live Chat <span class="footer__pulse"></span></a></li>
           </ul>
         </div>
-
-        <!-- Contact -->
         <div class="footer__col">
           <h4 class="footer__col-title">Contact Us</h4>
           <ul class="footer__col-links footer__contact">
@@ -259,13 +291,8 @@
             </li>
           </ul>
         </div>
-
       </div>
-
-      <!-- Divider -->
       <hr class="footer__hr" />
-
-      <!-- Bottom row -->
       <div class="footer__bottom">
         <div class="footer__socials">
           <a href="#" aria-label="Twitter" class="footer__social-link">
@@ -283,10 +310,7 @@
         </div>
         <p class="footer__copyright">© 2026 Zenxian Technical Systems. All rights reserved.</p>
       </div>
-
     </div>
-
-    <!-- SVG text hover effect -->
     <div class="footer__text-hover" aria-hidden="true">
       <svg id="footer-svg" width="100%" height="100%" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" class="footer__text-svg">
         <defs>
@@ -319,12 +343,11 @@
           mask="url(#footerTextMask)" style="opacity:0;transition:opacity 0.4s;">ZENXIAN</text>
       </svg>
     </div>
-
   </footer>
 
   <script src="data/services-data.js"></script>
   <script src="js/main.js" defer></script>
   <script src="js/mega-menu.js" defer></script>
-  <script src="js/service-page.js" defer></script>
+
 </body>
 </html>
