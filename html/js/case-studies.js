@@ -27,27 +27,49 @@ document.addEventListener('DOMContentLoaded', function () {
         '</div>',
         '<div class="gc-card__main">',
           '<h3 class="gc-card__title">' + cs.title + '</h3>',
-          '<p class="gc-card__desc">' + cs.desc + '</p>',
+          '<dl class="gc-card__csr">',
+            '<div class="gc-card__csr-row">',
+              '<dt class="gc-card__csr-label">Challenge</dt>',
+              '<dd class="gc-card__csr-value">' + cs.challenge + '</dd>',
+            '</div>',
+            '<div class="gc-card__csr-row">',
+              '<dt class="gc-card__csr-label">Solution</dt>',
+              '<dd class="gc-card__csr-value">' + cs.solution + '</dd>',
+            '</div>',
+            '<div class="gc-card__csr-row gc-card__csr-row--result">',
+              '<dt class="gc-card__csr-label">Result</dt>',
+              '<dd class="gc-card__csr-value">' + cs.result + '</dd>',
+            '</div>',
+          '</dl>',
         '</div>',
-        '<span class="gc-card__cta">',
-          'View Case Study ',
-          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">',
-            '<line x1="5" y1="12" x2="19" y2="12"/>',
-            '<polyline points="12 5 19 12 12 19"/>',
-          '</svg>',
-        '</span>',
+        cs.liveLink
+          ? [
+              '<span class="gc-card__cta">',
+                'Visit Website ',
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">',
+                  '<line x1="5" y1="12" x2="19" y2="12"/>',
+                  '<polyline points="12 5 19 12 12 19"/>',
+                '</svg>',
+              '</span>'
+            ].join('')
+          : '<span class="gc-card__cta gc-card__cta--soon">Link Coming Soon</span>',
       '</div>'
     ].join('');
 
-    card.addEventListener('click', function () {
-      window.location.href = 'case-study.html?s=' + cs.slug;
-    });
-    card.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        window.location.href = 'case-study.html?s=' + cs.slug;
-      }
-    });
+    if (cs.liveLink) {
+      card.addEventListener('click', function () {
+        window.open(cs.liveLink, '_blank', 'noopener,noreferrer');
+      });
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          window.open(cs.liveLink, '_blank', 'noopener,noreferrer');
+        }
+      });
+    } else {
+      card.style.cursor = 'default';
+      card.querySelector('.gc-card__cta').style.opacity = '0.35';
+    }
 
     grid.insertBefore(card, ctaCell);
   });

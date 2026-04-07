@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -22,8 +21,9 @@
         </a>
         <nav class="navbar__links">
           <div class="mega-menu-trigger" id="mega-menu-trigger"><span class="navbar__link">Solutions <span class="mega-menu-trigger__caret">▾</span></span></div>
-          <a href="platform.html" class="navbar__link">Platform</a>
+          
           <a href="case-studies.html" class="navbar__link">Case Studies</a>
+          <a href="careers.html" class="navbar__link">Careers</a>
           <a href="about.html" class="navbar__link navbar__link--active">About</a>
           <a href="contact.html" class="navbar__link">Contact</a>
         </nav>
@@ -48,8 +48,9 @@
       <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">✕</button>
       <nav class="mobile-menu-nav">
         <div><button class="mobile-solutions-btn" id="mobile-solutions-btn">Solutions</button><div class="mobile-solutions-panel" id="mobile-solutions-panel"><div id="mobile-solutions-accordion"></div></div></div>
-        <a href="platform.html">Platform</a>
+        
         <a href="case-studies.html">Case Studies</a>
+        <a href="careers.html">Careers</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -61,325 +62,308 @@
 
     <!-- ABOUT HERO -->
     <section class="about-hero">
-
-      <!-- Background image -->
       <div class="about-hero__bg" aria-hidden="true"></div>
-
-      <!-- Dark overlay -->
       <div class="about-hero__overlay" aria-hidden="true"></div>
-
-      <!-- Centered content -->
       <div class="about-hero__content">
         <h1 class="about-hero__h1">
           <span class="about-hero__h1-white">Blueprints of</span>
           <span class="about-hero__h1-cyan">Intelligence</span>
         </h1>
         <p class="about-hero__subtitle">
-          We reject the cult of speed. We embrace the discipline of structural
-          integrity. Zenxian designs digital systems that endure as long as the
-          physical monuments they manage.
+          We are a modern software company specializing in the design and development
+          of scalable, high-performance digital solutions — built for businesses that
+          demand more than the ordinary.
         </p>
         <div class="about-hero__btns">
           <a href="contact.html" class="btn btn--primary">Book a Consultation</a>
         </div>
       </div>
-
-      <!-- Bottom fade to void -->
       <div class="about-hero__bottom-fade" aria-hidden="true"></div>
-
     </section>
 
-    <!-- STRUCTURAL PURITY -->
-    <section class="structural-purity">
+    <!-- WHO WE ARE / MISSION / VISION -->
+    <section class="about-identity">
       <div class="container">
-        <div class="structural-purity__grid stagger-grid">
-
-          <!-- Left cell -->
-          <div class="structural-purity__cell anim-ready">
-            <svg class="structural-purity__icon-svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            <h3 class="structural-purity__title">Structural Purity</h3>
-            <p class="structural-purity__p">
-              Code is not a commodity; it is infrastructure. We apply civil
-              engineering principles to software architecture, ensuring
-              scalability is baked into the foundation.
-            </p>
-            <span class="structural-purity__metric">Metric: Zero Regression Policy</span>
+        <div class="about-identity__grid stagger-grid">
+          <div class="about-identity__block anim-ready">
+            <span class="about-identity__label">Who We Are</span>
+            <h3 class="about-identity__heading">Modern Software, Real Results</h3>
+            <p class="about-identity__text">We are a modern software company specializing in the design and development of scalable, high-performance digital solutions.</p>
           </div>
-
-          <!-- Center cell -->
-          <div class="structural-purity__cell structural-purity__cell--center anim-ready">
-            <div class="sp-center-bg" aria-hidden="true"></div>
-            <div class="sp-center-glow" aria-hidden="true"></div>
-            <h2 class="structural-purity__center-h2">Elegance<br />Through<br /><span class="sp-center-accent">Precision.</span></h2>
+          <div class="about-identity__block anim-ready">
+            <span class="about-identity__label">Our Mission</span>
+            <h3 class="about-identity__heading">Solving Real-World Challenges</h3>
+            <p class="about-identity__text">To design and deliver intelligent digital systems that solve real-world challenges, enhance user experiences, and create measurable value for businesses.</p>
           </div>
-
-          <!-- Right cell (split) -->
-          <div class="structural-purity__cell structural-purity__cell--right anim-ready">
-            <div class="structural-purity__cell--right-top">
-              <div class="structural-purity__stat-value stat-counter" data-target="0.01" data-suffix="%" data-decimals="2">0%</div>
-              <div class="structural-purity__stat-label">Failure Tolerance</div>
-              <p class="structural-purity__p" style="margin:0;">
-                Our methodology treats every micro-interaction as a critical
-                load-bearing point. This obsessive focus on the "Great Technical
-                Details" creates the "Global Institutional Trust" our clients rely on.
-              </p>
-            </div>
-            <div class="structural-purity__cell--right-bottom">
-              <svg class="structural-purity__icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <h4 class="structural-purity__title">Fortress Logic</h4>
-              <p class="structural-purity__p" style="margin:0;">
-                Security is not an add-on. It is the geometric result of perfect
-                design. Our systems are inherently secure because they are
-                architecturally sound.
-              </p>
-            </div>
+          <div class="about-identity__block anim-ready">
+            <span class="about-identity__label">Our Vision</span>
+            <h3 class="about-identity__heading">Future-Ready Leadership</h3>
+            <p class="about-identity__text">To become a trusted leader in building structured, future-ready digital solutions that redefine how businesses operate and grow.</p>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- PHOTO STRIP -->
-    <div style="position:relative;height:400px;background:#001620;">
-      <img
-        src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&fit=crop"
-        alt="Zenxian team workspace"
-        style="width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.45) saturate(0.8);
-          -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 100%);
-          mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 100%);"
-      />
-      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:48px;">
-        <blockquote style="text-align:center;max-width:640px;margin:0;">
-          <p style="font-family:'Manrope',sans-serif;font-size:clamp(1.25rem,3vw,2rem);font-weight:900;text-transform:uppercase;letter-spacing:0.05em;color:#fff;margin:0 0 16px;">
-            "Think Deep and Build Forever."
-          </p>
-          <cite style="font-size:0.75rem;color:rgba(255,255,255,0.4);font-style:normal;text-transform:uppercase;letter-spacing:0.2em;">
-            — The Zenxian Engineering Principle
-          </cite>
-        </blockquote>
-      </div>
-    </div>
-
-    <!-- RIGOROUS COMMIT -->
-    <section class="rigorous-commit">
+    <!-- WHAT WE DO -->
+    <section class="about-what-section">
       <div class="container">
-        <div class="rigorous-commit__grid anim-ready">
+        <div class="about-section-hd anim-ready">
+          <span class="section-label" style="justify-content:center;margin-bottom:12px;display:flex;">What We Do</span>
+          <h2 class="about-section-h2">Our Core Services</h2>
+          <p class="about-section-sub">Click any service to learn more about what we deliver.</p>
+        </div>
+        <div class="about-what-grid">
 
-          <!-- Left -->
-          <div>
-            <h2 class="rigorous-commit__h2">The Art of the<br />Rigorous Commit</h2>
-            <p class="rigorous-commit__p">
-              At Zenxian, we believe that "Move Fast and Break Things" is a
-              reckless philosophy for high-stakes industries. We replace it with
-              "Think Deep and Build Forever."
-            </p>
-            <p class="rigorous-commit__p">
-              Every line of code undergoes a structural audit akin to checking
-              the stress-load of a skyscraper's beams. We don't just ship
-              software; we commission digital assets.
-            </p>
-            <a href="#" class="btn btn--outline">Read Our Standards</a>
+          <div class="about-what-card" tabindex="0" role="button" aria-expanded="false">
+            <div class="about-what-card__front">
+              <span class="about-what-card__icon">💻</span>
+              <h3 class="about-what-card__title">Web Platforms</h3>
+              <p class="about-what-card__short">Modern, responsive websites built for performance</p>
+              <span class="about-what-card__toggle">+ More</span>
+            </div>
+            <div class="about-what-card__body" aria-hidden="true">
+              <p>From marketing sites to complex web applications, we design and develop responsive platforms that load fast and scale effortlessly — built on modern frameworks for long-term maintainability.</p>
+            </div>
           </div>
 
-          <!-- Right: code block -->
-          <div class="code-block">
-            <div class="code-block__dots">
-              <span class="code-block__dot"></span>
-              <span class="code-block__dot"></span>
-              <span class="code-block__dot"></span>
+          <div class="about-what-card" tabindex="0" role="button" aria-expanded="false">
+            <div class="about-what-card__front">
+              <span class="about-what-card__icon">⚙️</span>
+              <h3 class="about-what-card__title">Custom Software</h3>
+              <p class="about-what-card__short">Tailored systems designed for business efficiency</p>
+              <span class="about-what-card__toggle">+ More</span>
             </div>
-            <div class="code-block__body">
-              <div><span class="comment">// Specification 001-A</span></div>
-              <div><span class="kw">const</span> <span class="val">variable</span> = <span class="val">true</span></div>
-              <div><span class="kw">function</span> <span class="val">verifyPath</span>()</div>
-              <div class="pl"><span class="kw">let</span> <span class="val">redundant</span> = <span class="str">PATH_LOGIC</span></div>
-              <div class="pl"><span class="comment">// Quantum-safe encryption...</span></div>
-              <div class="pl"><span class="kw">return</span> <span class="val">stateless_session</span></div>
-              <div><span class="comment">}</span></div>
-              <div><span class="val" style="opacity:0.3;">management()</span></div>
+            <div class="about-what-card__body" aria-hidden="true">
+              <p>We analyze your workflows and build purpose-built systems — eliminating inefficiency, automating repetitive tasks, and creating software that aligns precisely with how your business operates.</p>
             </div>
-            <div class="code-block__badge">Spec 001-A</div>
+          </div>
+
+          <div class="about-what-card" tabindex="0" role="button" aria-expanded="false">
+            <div class="about-what-card__front">
+              <span class="about-what-card__icon">🎨</span>
+              <h3 class="about-what-card__title">UI/UX Design</h3>
+              <p class="about-what-card__short">User-focused interfaces with seamless experiences</p>
+              <span class="about-what-card__toggle">+ More</span>
+            </div>
+            <div class="about-what-card__body" aria-hidden="true">
+              <p>Our design process starts with research and ends with intuitive, accessible interfaces that users love. Clean, structured, and always focused on the end user experience.</p>
+            </div>
+          </div>
+
+          <div class="about-what-card" tabindex="0" role="button" aria-expanded="false">
+            <div class="about-what-card__front">
+              <span class="about-what-card__icon">🔗</span>
+              <h3 class="about-what-card__title">System Integration</h3>
+              <p class="about-what-card__short">Connecting tools and systems for smooth operations</p>
+              <span class="about-what-card__toggle">+ More</span>
+            </div>
+            <div class="about-what-card__body" aria-hidden="true">
+              <p>We connect your existing tools, APIs, and platforms into a unified digital ecosystem — reducing friction, improving data flow, and ensuring your systems work in harmony.</p>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- SYSTEMATIC PROGRESSION -->
-    <section class="systematic-progression">
+    <!-- OUR APPROACH -->
+    <section class="about-approach-section">
       <div class="container">
-
-        <div class="systematic-progression__header anim-ready">
-          <span class="section-label" style="justify-content:center;margin-bottom:16px;">Our Process</span>
-          <h2 class="systematic-progression__title">Systematic<br><span style="background:linear-gradient(135deg,#32C8D9,#1F8DA6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Progression</span></h2>
-          <p class="systematic-progression__subtitle">Every engagement follows four non-negotiable phases — no shortcuts, no exceptions.</p>
+        <div class="about-section-hd anim-ready">
+          <span class="section-label" style="justify-content:center;margin-bottom:12px;display:flex;">Our Approach</span>
+          <h2 class="about-section-h2">How We Work</h2>
+          <p class="about-section-sub">A structured process focused on clarity, performance, and results.</p>
         </div>
+        <div class="about-approach-steps stagger-grid">
 
-        <div class="steps-grid stagger-grid">
-
-          <div class="step-card anim-ready">
-            <div class="step-card__top">
-              <div class="step-card__number">01</div>
-              <svg class="step-card__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            </div>
-            <h3 class="step-card__title">Discovery</h3>
-            <p class="step-card__desc">Auditing the existing load-bearing structures of your business data.</p>
+          <div class="about-approach-step anim-ready">
+            <div class="about-approach-step__icon-wrap">🧠</div>
+            <div class="about-approach-step__num">01</div>
+            <h3 class="about-approach-step__title">Understand</h3>
+            <p class="about-approach-step__desc">We analyze business needs and define clear objectives</p>
           </div>
 
-          <div class="step-card anim-ready">
-            <div class="step-card__top">
-              <div class="step-card__number">02</div>
-              <svg class="step-card__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            </div>
-            <h3 class="step-card__title">Modeling</h3>
-            <p class="step-card__desc">Visualizing the logic flow within a 1px grid constraint for maximum clarity.</p>
+          <div class="about-approach-connector anim-ready" aria-hidden="true">→</div>
+
+          <div class="about-approach-step anim-ready">
+            <div class="about-approach-step__icon-wrap">🏗️</div>
+            <div class="about-approach-step__num">02</div>
+            <h3 class="about-approach-step__title">Design & Build</h3>
+            <p class="about-approach-step__desc">We craft structured, scalable, and user-focused solutions</p>
           </div>
 
-          <div class="step-card anim-ready">
-            <div class="step-card__top">
-              <div class="step-card__number">03</div>
-              <svg class="step-card__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            </div>
-            <h3 class="step-card__title">Forging</h3>
-            <p class="step-card__desc">The construction phase where modular units are stress-tested in isolation.</p>
-          </div>
+          <div class="about-approach-connector anim-ready" aria-hidden="true">→</div>
 
-          <div class="step-card anim-ready">
-            <div class="step-card__top">
-              <div class="step-card__number">04</div>
-              <svg class="step-card__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            </div>
-            <h3 class="step-card__title">Deployment</h3>
-            <p class="step-card__desc">Transition to live environments with zero-downtime structural handovers.</p>
+          <div class="about-approach-step anim-ready">
+            <div class="about-approach-step__icon-wrap">⚡</div>
+            <div class="about-approach-step__num">03</div>
+            <h3 class="about-approach-step__title">Optimize & Deliver</h3>
+            <p class="about-approach-step__desc">We refine performance and ensure reliable delivery</p>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- OUR EXPERTS -->
-    <section class="our-experts" id="our-experts">
+    <!-- WHY CHOOSE US -->
+    <section class="about-why-section">
+      <div class="container">
+        <div class="about-section-hd anim-ready">
+          <span class="section-label" style="justify-content:center;margin-bottom:12px;display:flex;">Why Choose Us</span>
+          <h2 class="about-section-h2">Why Choose Us</h2>
+          <p class="about-section-sub">Delivering solutions that are reliable, scalable, and built for long-term success.</p>
+        </div>
+        <div class="about-why-grid">
+
+          <div class="about-why-item anim-ready">
+            <span class="about-why-item__icon">🧠</span>
+            <h3 class="about-why-item__title">Strategic Thinking</h3>
+            <p class="about-why-item__desc">Solutions aligned with real business goals</p>
+          </div>
+
+          <div class="about-why-item anim-ready">
+            <span class="about-why-item__icon">⚙️</span>
+            <h3 class="about-why-item__title">Technical Excellence</h3>
+            <p class="about-why-item__desc">High-quality, scalable, and reliable systems</p>
+          </div>
+
+          <div class="about-why-item anim-ready">
+            <span class="about-why-item__icon">⚡</span>
+            <h3 class="about-why-item__title">Performance Focused</h3>
+            <p class="about-why-item__desc">Optimized for speed, efficiency, and usability</p>
+          </div>
+
+          <div class="about-why-item anim-ready">
+            <span class="about-why-item__icon">🤝</span>
+            <h3 class="about-why-item__title">Client-Centric Approach</h3>
+            <p class="about-why-item__desc">Built with transparency and long-term value</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR VALUES -->
+    <section class="about-values-section">
+      <div class="container">
+        <div class="about-section-hd anim-ready">
+          <span class="section-label" style="justify-content:center;margin-bottom:12px;display:flex;">Our Values</span>
+          <h2 class="about-section-h2">What Drives Us</h2>
+          <p class="about-section-sub">Driven by quality, guided by innovation, built on integrity, and focused on our clients.</p>
+        </div>
+        <div class="about-values-grid">
+
+          <div class="about-value-item">
+            <span class="about-value-item__icon">🎯</span>
+            <h3 class="about-value-item__title">Quality</h3>
+            <p class="about-value-item__desc">Delivering reliable and high-standard solutions</p>
+          </div>
+
+          <div class="about-value-item">
+            <span class="about-value-item__icon">💡</span>
+            <h3 class="about-value-item__title">Innovation</h3>
+            <p class="about-value-item__desc">Embracing modern technologies and ideas</p>
+          </div>
+
+          <div class="about-value-item">
+            <span class="about-value-item__icon">🤝</span>
+            <h3 class="about-value-item__title">Integrity</h3>
+            <p class="about-value-item__desc">Working with transparency and trust</p>
+          </div>
+
+          <div class="about-value-item">
+            <span class="about-value-item__icon">👥</span>
+            <h3 class="about-value-item__title">Customer Focus</h3>
+            <p class="about-value-item__desc">Putting client needs at the center of every solution</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTS -->
+    <section class="our-experts about-experts-section" id="our-experts">
       <div class="container">
 
         <div class="our-experts__header anim-ready">
           <span class="section-label" style="justify-content:center;margin-bottom:16px;">The Team</span>
-          <h2 class="our-experts__title">Meet Our <span class="our-experts__title-accent">Experts</span></h2>
-          <p class="our-experts__subtitle">The minds behind every blueprint — architects, engineers, and strategists who build systems that last.</p>
+          <h2 class="our-experts__title">Meet Our <span class="our-experts__title-accent">Expert</span></h2>
+          <p class="our-experts__subtitle">The mind behind every blueprint — strategist, innovator, and builder.</p>
         </div>
 
-        <div class="swiper experts-swiper">
-          <div class="swiper-wrapper">
+        <div class="about-expert-featured anim-ready">
 
-            <div class="swiper-slide">
-              <div class="expert-card" data-expert="0" role="button" tabindex="0">
-                <div class="expert-card__img-wrap">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="Marcus Chen" class="expert-card__img" />
-                  <div class="expert-card__overlay"><span>View Profile</span></div>
-                </div>
-                <div class="expert-card__info">
-                  <h3 class="expert-card__name">Marcus Chen</h3>
-                  <span class="expert-card__role">Chief Technology Officer</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="expert-card" data-expert="1" role="button" tabindex="0">
-                <div class="expert-card__img-wrap">
-                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=80" alt="Sarah Kovacs" class="expert-card__img" />
-                  <div class="expert-card__overlay"><span>View Profile</span></div>
-                </div>
-                <div class="expert-card__info">
-                  <h3 class="expert-card__name">Sarah Kovacs</h3>
-                  <span class="expert-card__role">Head of AI Engineering</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="expert-card" data-expert="2" role="button" tabindex="0">
-                <div class="expert-card__img-wrap">
-                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80" alt="Daniel Osei" class="expert-card__img" />
-                  <div class="expert-card__overlay"><span>View Profile</span></div>
-                </div>
-                <div class="expert-card__info">
-                  <h3 class="expert-card__name">Daniel Osei</h3>
-                  <span class="expert-card__role">Lead Systems Architect</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="expert-card" data-expert="3" role="button" tabindex="0">
-                <div class="expert-card__img-wrap">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80" alt="Priya Nair" class="expert-card__img" />
-                  <div class="expert-card__overlay"><span>View Profile</span></div>
-                </div>
-                <div class="expert-card__info">
-                  <h3 class="expert-card__name">Priya Nair</h3>
-                  <span class="expert-card__role">Principal Data Engineer</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="expert-card" data-expert="4" role="button" tabindex="0">
-                <div class="expert-card__img-wrap">
-                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80" alt="James Whitfield" class="expert-card__img" />
-                  <div class="expert-card__overlay"><span>View Profile</span></div>
-                </div>
-                <div class="expert-card__info">
-                  <h3 class="expert-card__name">James Whitfield</h3>
-                  <span class="expert-card__role">Security Engineering Lead</span>
-                </div>
-              </div>
-            </div>
-
+          <div class="about-expert-featured__photo-col">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=80"
+              alt="Hasara Liyanage"
+              class="about-expert-featured__img"
+            />
           </div>
-          <div class="swiper-pagination experts-pagination"></div>
-        </div>
 
+          <div class="about-expert-featured__info">
+            <span class="about-expert-featured__role">Co-Founder</span>
+            <h3 class="about-expert-featured__name">Hasara Liyanage</h3>
+            <p class="about-expert-featured__quote">"Driving growth through strategy, innovation, and technology."</p>
+
+            <p class="about-expert-featured__bio" style="margin-top:0;">
+              Hasara co-founded Viralpool, Zenxian and brings strong expertise in marketing, business strategy, and software-driven initiatives. He focuses on aligning technology with business growth and delivering impactful digital solutions.
+            </p>
+
+            <div class="about-expert-featured__section-label">Background</div>
+            <p class="about-expert-featured__bio">Holds a BSc in Mathematics from the University of Sri Jayewardenepura, an Associate Member of CIMA, and an MBA from PIM. Also accredited in International Relations, Diplomacy, and HRM.</p>
+
+            <div class="about-expert-featured__section-label">Experience</div>
+            <p class="about-expert-featured__bio">Experience across Peoples Leasing Finance PLC, Dialog, and Dell, with a focus on sales, finance, process reengineering, and digital transformation.</p>
+
+            <div class="about-expert-featured__section-label">Leadership & Impact</div>
+            <p class="about-expert-featured__bio">Represented Sri Lanka in international youth forums in India and Nepal, contributing to initiatives in reconciliation and social impact. As an entrepreneur, he continues to drive innovation in the software space.</p>
+
+            <div class="about-expert-featured__tags">
+              <span>Business Strategy</span>
+              <span>Digital Transformation</span>
+              <span>Marketing &amp; Growth</span>
+              <span>Software Project Management</span>
+              <span>Process Optimization</span>
+            </div>
+
+            <div class="about-expert-featured__stats">
+              <div class="about-expert-featured__stat">
+                <span>10+</span>
+                <small>Years</small>
+              </div>
+              <div class="about-expert-featured__stat">
+                <span>50+</span>
+                <small>Projects</small>
+              </div>
+              <div class="about-expert-featured__stat">
+                <span>40+</span>
+                <small>Clients</small>
+              </div>
+            </div>
+
+            <div class="about-expert-featured__btns">
+              <a
+                href="https://www.linkedin.com/in/hasaral?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--outline"
+              >LinkedIn</a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- EXPERT MODAL -->
-    <div class="expert-modal" id="expert-modal" aria-hidden="true">
-      <div class="expert-modal__backdrop" id="expert-modal-backdrop"></div>
-      <div class="expert-modal__panel" role="dialog" aria-modal="true">
-        <button class="expert-modal__close" id="expert-modal-close" aria-label="Close">✕</button>
-        <div class="expert-modal__inner">
-          <div class="expert-modal__photo-col">
-            <img id="modal-photo" src="" alt="" class="expert-modal__photo" />
-            <div class="expert-modal__socials">
-              <a href="#" class="expert-modal__social-link">LinkedIn</a>
-              <a href="#" class="expert-modal__social-link">GitHub</a>
-            </div>
-          </div>
-          <div class="expert-modal__body">
-            <span id="modal-role" class="expert-modal__role"></span>
-            <h3 id="modal-name" class="expert-modal__name"></h3>
-            <p id="modal-bio" class="expert-modal__bio"></p>
-            <div class="expert-modal__skills-label">Specialisations</div>
-            <div id="modal-skills" class="expert-modal__skills"></div>
-            <div class="expert-modal__stats">
-              <div class="expert-modal__stat"><span id="modal-years"></span><small>Years</small></div>
-              <div class="expert-modal__stat"><span id="modal-projects"></span><small>Projects</small></div>
-              <div class="expert-modal__stat"><span id="modal-clients"></span><small>Clients</small></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ABOUT CTA -->
+    <!-- CTA -->
     <section class="cta-section bg-void bg-grid">
       <div class="container-narrow">
         <div class="anim-ready">
-          <h2>Ready to Build for<br /><em class="accent" style="font-style:normal;color:#32C8D9;">Permanence?</em></h2>
-          <p>Our consultation isn't a sales pitch. It's an architectural review of your technical ambition.</p>
+          <h2>Let's Build Something<br /><em style="font-style:normal;color:#32C8D9;">Impactful Together.</em></h2>
+          <p>Partner with us to create intelligent, high-performance digital solutions.</p>
           <div class="cta-section__buttons">
-            <a href="contact.html" class="btn btn--primary">Initiate Consultation</a>
-            <a href="#" class="btn btn--outline">The Technical Whitepaper</a>
+            <a href="contact.html" class="btn btn--primary">Get in Touch</a>
           </div>
         </div>
       </div>
@@ -411,7 +395,7 @@
           <ul class="footer__col-links">
             <li><a href="about.html" class="footer__link">About Us</a></li>
             <li><a href="case-studies.html" class="footer__link">Case Studies</a></li>
-            <li><a href="platform.html" class="footer__link">Platform</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
             <li><a href="careers.html" class="footer__link">Careers</a></li>
           </ul>
         </div>
@@ -433,15 +417,15 @@
           <ul class="footer__col-links footer__contact">
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              <a href="mailto:hello@zenxian.com" class="footer__link">hello@zenxian.com</a>
+              <a href="mailto:business@trangle.io" class="footer__link">business@trangle.io</a>
             </li>
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
-              <a href="tel:+1234567890" class="footer__link">+1 (234) 567-890</a>
+              <a href="tel:+94778001343" class="footer__link">+94 77 800 1343</a>
             </li>
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span class="footer__link">San Francisco, CA</span>
+              <span class="footer__link">100, Welikadawatta Road, Rajagiriya</span>
             </li>
           </ul>
         </div>
@@ -511,110 +495,29 @@
   <script src="data/services-data.js"></script>
   <script src="js/main.js" defer></script>
   <script src="js/mega-menu.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script>
-    // ── Expert data ──────────────────────────────────────────────
-    var experts = [
-      {
-        name: "Marcus Chen",
-        role: "Chief Technology Officer",
-        photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80",
-        bio: "Marcus brings 18 years of experience designing resilient distributed systems for Fortune 500 companies. He pioneered Zenxian's zero-regression architecture doctrine and leads all technical strategy decisions.",
-        skills: ["Distributed Systems", "Cloud Architecture", "Technical Strategy", "Team Leadership"],
-        years: "18+", projects: "120+", clients: "40+"
-      },
-      {
-        name: "Sarah Kovacs",
-        role: "Head of AI Engineering",
-        photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=80",
-        bio: "Sarah specialises in production-grade machine learning systems and large-scale data pipelines. Her work on predictive infrastructure monitoring has reduced client downtime by an average of 94%.",
-        skills: ["Machine Learning", "Neural Networks", "MLOps", "Data Pipelines"],
-        years: "12+", projects: "85+", clients: "28+"
-      },
-      {
-        name: "Daniel Osei",
-        role: "Lead Systems Architect",
-        photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=80",
-        bio: "Daniel has architected enterprise platforms across fintech, healthcare and logistics sectors. His modular design philosophy ensures systems remain maintainable and extensible over decades, not quarters.",
-        skills: ["Enterprise Architecture", "Microservices", "API Design", "Domain-Driven Design"],
-        years: "15+", projects: "95+", clients: "35+"
-      },
-      {
-        name: "Priya Nair",
-        role: "Principal Data Engineer",
-        photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop&q=80",
-        bio: "Priya designs the data foundations that power intelligent products. Her expertise spans real-time streaming architectures and analytical warehousing, turning raw data into competitive infrastructure.",
-        skills: ["Data Engineering", "Stream Processing", "Data Warehousing", "Analytics"],
-        years: "10+", projects: "70+", clients: "22+"
-      },
-      {
-        name: "James Whitfield",
-        role: "Security Engineering Lead",
-        photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&auto=format&fit=crop&q=80",
-        bio: "James applies zero-trust principles to every engagement, ensuring security is structural rather than cosmetic. He has led compliance and hardening initiatives for regulated industries across three continents.",
-        skills: ["Zero-Trust Security", "Penetration Testing", "Compliance", "Infrastructure Hardening"],
-        years: "14+", projects: "60+", clients: "30+"
-      }
-    ];
-
-    // ── Init Swiper ──────────────────────────────────────────────
-    var expertSwiper = new Swiper('.experts-swiper', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      loop: true,
-      slidesPerView: 'auto',
-      coverflowEffect: { rotate: 0, stretch: 0, depth: 120, modifier: 2.5, slideShadows: false },
-      autoplay: { delay: 2500, disableOnInteraction: false },
-      pagination: { el: '.experts-pagination', clickable: true },
-      speed: 600
-    });
-
-    // ── Modal logic ──────────────────────────────────────────────
-    var modal   = document.getElementById('expert-modal');
-    var backdrop = document.getElementById('expert-modal-backdrop');
-    var closeBtn = document.getElementById('expert-modal-close');
-
-    function openExpert(idx) {
-      var e = experts[idx];
-      if (!e) return;
-      document.getElementById('modal-photo').src = e.photo;
-      document.getElementById('modal-photo').alt = e.name;
-      document.getElementById('modal-name').textContent = e.name;
-      document.getElementById('modal-role').textContent = e.role;
-      document.getElementById('modal-bio').textContent  = e.bio;
-      document.getElementById('modal-years').textContent    = e.years;
-      document.getElementById('modal-projects').textContent = e.projects;
-      document.getElementById('modal-clients').textContent  = e.clients;
-      var skillsEl = document.getElementById('modal-skills');
-      skillsEl.innerHTML = '';
-      e.skills.forEach(function(s) {
-        var tag = document.createElement('span');
-        tag.className = 'expert-modal__skill-tag';
-        tag.textContent = s;
-        skillsEl.appendChild(tag);
+    /* ── What We Do — expand/collapse ── */
+    document.querySelectorAll('.about-what-card').forEach(function (card) {
+      card.addEventListener('click', function () {
+        var wasExpanded = this.classList.contains('is-expanded');
+        document.querySelectorAll('.about-what-card').forEach(function (c) {
+          c.classList.remove('is-expanded');
+          c.setAttribute('aria-expanded', 'false');
+          c.querySelector('.about-what-card__toggle').textContent = '+ More';
+          c.querySelector('.about-what-card__body').setAttribute('aria-hidden', 'true');
+        });
+        if (!wasExpanded) {
+          this.classList.add('is-expanded');
+          this.setAttribute('aria-expanded', 'true');
+          this.querySelector('.about-what-card__toggle').textContent = '− Less';
+          this.querySelector('.about-what-card__body').setAttribute('aria-hidden', 'false');
+        }
       });
-      modal.classList.add('is-open');
-      modal.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-      expertSwiper.autoplay.stop();
-    }
-
-    function closeModal() {
-      modal.classList.remove('is-open');
-      modal.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-      expertSwiper.autoplay.start();
-    }
-
-    document.querySelectorAll('.expert-card').forEach(function(card) {
-      card.addEventListener('click', function() { openExpert(+this.dataset.expert); });
-      card.addEventListener('keydown', function(e) { if (e.key === 'Enter') openExpert(+this.dataset.expert); });
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+      });
     });
-
-    closeBtn.addEventListener('click', closeModal);
-    backdrop.addEventListener('click', closeModal);
-    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
   </script>
 
 </body>
