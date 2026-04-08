@@ -224,14 +224,8 @@ img { display: block; max-width: 100%; }
 }
 
 .section-label::before {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 1px;
-  background: var(--color-cyan);
-  flex-shrink: 0;
+  display: none;
 }
-.hero .section-label::before { display: none; }
 .hero .section-label { line-height: 1.4; flex-direction: column; gap: 2px; text-align: center; }
 
 /* ---- 5. SCROLL ANIMATIONS --------------------------------- */
