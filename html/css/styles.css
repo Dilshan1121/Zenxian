@@ -7193,3 +7193,185 @@ h1, h2, h3,
 *, *::before, *::after {
   border-radius: 0 !important;
 }
+
+/* ---- LEGAL PAGES (Privacy / Terms) ---- */
+.legal-hero__bg--privacy {
+  background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1920&auto=format&fit=crop&q=80') !important;
+}
+.legal-hero__bg--terms {
+  background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&auto=format&fit=crop&q=80') !important;
+}
+.legal-content {
+  padding: 80px 0;
+  background: var(--color-void);
+}
+
+/* Two-column layout: sidebar + cards */
+.legal-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* Sticky sidebar TOC */
+.legal-toc {
+  position: sticky;
+  top: 100px;
+}
+.legal-toc__label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-cyan);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(31,141,166,0.25);
+}
+.legal-toc__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.legal-toc__link {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  padding: 7px 12px;
+  border-left: 2px solid transparent;
+  transition: color 0.25s, border-color 0.25s, background 0.25s;
+}
+.legal-toc__link:hover {
+  color: #fff;
+  border-left-color: var(--color-cyan);
+  background: rgba(31,141,166,0.06);
+}
+
+/* Content cards */
+.legal-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.legal-card {
+  display: flex;
+  gap: 28px;
+  padding: 32px;
+  background: var(--color-surface);
+  border: 1px solid rgba(31,141,166,0.12);
+  border-left: 3px solid rgba(31,141,166,0.3);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.legal-card:hover {
+  border-left-color: var(--color-cyan);
+  box-shadow: 0 4px 24px rgba(50,200,217,0.05);
+}
+.legal-card__num {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: rgba(31,141,166,0.2);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 40px;
+}
+.legal-card__body {
+  flex: 1;
+  min-width: 0;
+}
+.legal-card__body h2 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 14px;
+}
+.legal-card__body h3 {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-cyan);
+  margin: 20px 0 10px;
+}
+.legal-card__body p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+  margin: 0 0 12px;
+}
+.legal-card__body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.legal-card__body ul li {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.45);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.65;
+}
+.legal-card__body ul li::before {
+  content: '\2192';
+  position: absolute;
+  left: 0;
+  color: var(--color-cyan);
+  font-size: 0.75rem;
+  top: 2px;
+}
+.legal-card__body a {
+  color: var(--color-cyan);
+  text-decoration: none;
+}
+.legal-card__body a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: collapse sidebar */
+@media (max-width: 900px) {
+  .legal-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .legal-toc {
+    position: static;
+    padding: 20px 24px;
+    background: var(--color-surface);
+    border: 1px solid rgba(31,141,166,0.12);
+  }
+  .legal-toc__label {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .legal-toc__nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .legal-toc__link {
+    border-left: none;
+    padding: 5px 10px;
+    font-size: 0.72rem;
+    background: rgba(31,141,166,0.06);
+  }
+  .legal-toc__link:hover {
+    border-left: none;
+    background: rgba(31,141,166,0.15);
+  }
+}
+@media (max-width: 600px) {
+  .legal-card {
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 20px;
+  }
+  .legal-card__num {
+    font-size: 1.4rem;
+  }
+}

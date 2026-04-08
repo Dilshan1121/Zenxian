@@ -12,6 +12,7 @@
  /* ── Inject canvas ── */
  var canvas = document.createElement('canvas');
  canvas.id = 'contact-stars-canvas';
+ canvas.style.cssText = 'position:absolute;inset:0;z-index:2;pointer-events:none;';
  section.insertBefore(canvas, section.firstChild);
  var ctx = canvas.getContext('2d');
 

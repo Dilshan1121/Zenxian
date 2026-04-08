@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: sitemap.xml
+
+# Disallow non-content directories
+Disallow: /js/
+Disallow: /css/
+Disallow: /data/
